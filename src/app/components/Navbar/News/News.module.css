@@ -1,0 +1,83 @@
+.newsContainer {
+  /* height: 100vh; */
+  background: linear-gradient(180deg, #000000, #0a0a0a);
+  padding: 8rem 10rem 10rem;
+}
+
+.newsTitleContainer {
+  background-color: transparent;
+}
+.title {
+  padding: 5rem 10rem 1rem;
+  color: aliceblue;
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sortieContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articleNews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 2rem;
+  border: 1px solid #ee7124;
+}
+.title2 {
+  /* margin-top: 1rem; */
+  background-color: #751010;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.containerTiktok {
+  height: 70vh;
+  width: 25vw;
+  padding: 0rem 0 0rem 0;
+  border: 1px solid #ee7124;
+}
+.tiktok__video {
+  height: 100%;
+  width: 100%;
+  --media-object-fit: cover;
+}
+.tiktokText {
+  color: aliceblue;
+}
+
+.containerButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.button {
+  width: 12rem;
+  background-color: transparent;
+  border: 1px solid #ee7124;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  color: #ee7124;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+
+.separatorNeon {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #fff;
+  /* margin-bottom: 2rem; */
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124,
+    inset 0 0 16px #ee7124, 0 0 32px #ee7124, inset 0 0 32px #ee7124;
+  z-index: 100;
+}

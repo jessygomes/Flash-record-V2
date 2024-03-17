@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  top: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+/* .scrolled {
+  transition: all 0.3s ease;
+  background-color: #19161ebb;
+  padding: 0.5rem 10rem;
+  box-shadow: 0 0 10px #19161e;
+} */
+
+.nav {
+  font-family: "kanit";
+  color: #ee7124;
+}
+
+.nav__menuBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.3rem;
+  cursor: pointer;
+}
+.nav__menuBar div {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #ee7124;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+.nav__menuList {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 12vh;
+  width: 100%;
+  top: -100vh;
+  padding: 1.5rem 1rem;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.776);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: -1;
+}
+.nav__menuList.active {
+  transition: all 0.5s ease;
+  top: 0;
+  opacity: 1;
+  z-index: 9;
+}
+.nav__itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+.nav__item {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav__item:hover {
+  text-shadow: 0 0 5px #ee7124, 0 0 10px #ee7124, 0 0 5px #ee7124,
+    0 0 10px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
+}
+.nav__item.activeLink {
+  text-shadow: 0 0 5px #ee7124, 0 0 10px #ee7124, 0 0 5px #ee7124,
+    0 0 10px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menuBar div {
+    width: 40px;
+    height: 0.2rem;
+    background-color: #ee7124;
+    border-radius: 1rem;
+    z-index: 10;
+  }
+  .nav__menuList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: -100vh;
+    padding: 1.5rem 1rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  .nav__itemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .nav__item {
+    font-size: 2rem;
+  }
+}

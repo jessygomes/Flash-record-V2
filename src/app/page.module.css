@@ -1,0 +1,11 @@
+.containerVideo {
+  /* background-color: aqua; */
+  height: 100vh;
+  width: 100vw;
+}
+.bg__video {
+  /* position: fixed; */
+  --media-object-fit: cover;
+  top: 0;
+  z-index: -99;
+}
