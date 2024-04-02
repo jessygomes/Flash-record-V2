@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from "./Partenaires.module.css";
+import Link from "next/link";
 
 export default function Partenaires() {
   return (
     <div>
       <div className={styles.newsTitleContainer}>
-        <h1 className={styles.title}>Nos Partenaires</h1>
+        <h1 id="nospartenaires" className={styles.title}>
+          Nos Partenaires
+        </h1>
       </div>
       <section className={styles.newsContainer}>
         <div className={styles.sortieContainer}>
@@ -22,46 +25,66 @@ export default function Partenaires() {
               d&apos;agrandir la visibilité lors des processus de diffusion.
             </p>
             <div className={styles.partenairesList}>
-              <div className={styles.partenaires}>
+              <Link
+                target="_blank"
+                href="https://crijinfo.fr/"
+                className={styles.partenaires}
+              >
                 <Image
-                  alt="LEONE"
+                  alt="CRIJ"
                   src="/assets/Partenaires/CRIJ.png"
                   width={300}
                   height={300}
                 />
-              </div>
-              <div className={styles.partenaires}>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.flexrealisation.com/"
+                className={styles.partenaires}
+              >
                 <Image
-                  alt="LEONE"
+                  alt="Flex Réalisation"
                   src="/assets/Partenaires/FLEX_REA.png"
                   width={300}
                   height={300}
                 />
-              </div>
-              <div className={styles.partenaires}>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://le108.org/"
+                className={styles.partenaires}
+              >
                 <Image
-                  alt="LEONE"
+                  alt="Le 108"
                   src="/assets/Partenaires/LE_108.png"
                   width={300}
                   height={300}
                 />
-              </div>
-              <div className={styles.partenaires}>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.orleans-metropole.fr/"
+                className={styles.partenaires}
+              >
                 <Image
-                  alt="LEONE"
+                  alt="Mairie d'Orléans"
                   src="/assets/Partenaires/ORL_MAIRIE.png"
                   width={300}
                   height={300}
                 />
-              </div>
-              <div className={styles.partenaires}>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://polysonik.fr/"
+                className={styles.partenaires}
+              >
                 <Image
-                  alt="LEONE"
+                  alt="Polysonik"
                   src="/assets/Partenaires/POLYSONIC.png"
                   width={300}
                   height={300}
                 />
-              </div>
+              </Link>
             </div>
             <p className={styles.textPropos}>
               Orlinside est une boite de production spécialisée dans la création
@@ -74,7 +97,7 @@ export default function Partenaires() {
             </p>
             <div className={styles.partenairesOrlinside}>
               <Image
-                alt="LEONE"
+                alt="Orlinside"
                 src="/assets/Partenaires/LOGO_ORLINSIDE_VECTO_BLANC.png"
                 width={400}
                 height={400}

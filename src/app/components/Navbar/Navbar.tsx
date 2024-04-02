@@ -10,16 +10,20 @@ const itemNavbar = [
     link: "/",
   },
   {
+    text: "Actualités",
+    link: "#actualites",
+  },
+  {
     text: "A Propos",
-    link: "/apropos",
+    link: "#apropos",
   },
   {
     text: "Nos Partenaires",
-    link: "/nospartenaires",
+    link: "#nospartenaires",
   },
   {
     text: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 

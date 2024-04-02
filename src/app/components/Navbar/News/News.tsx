@@ -7,7 +7,9 @@ export default function News() {
   return (
     <div>
       <div className={styles.newsTitleContainer}>
-        <h1 className={styles.title}>Actualités</h1>
+        <h1 id="actualites" className={styles.title}>
+          Actualités
+        </h1>
       </div>
       <div className={styles.separatorNeon}></div>
       <section className={styles.newsContainer}>

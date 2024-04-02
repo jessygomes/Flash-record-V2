@@ -12,7 +12,7 @@
   background-color: transparent;
 }
 .title {
-  padding: 5rem 10rem 1rem;
+  padding: 5rem 15rem 1rem;
   color: aliceblue;
   font-size: 4.5rem;
   font-weight: 900;
@@ -39,7 +39,7 @@
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1.2rem;
-  font-family: "Walkway-Bold";
+  font-family: "kanit-medium";
 }
 .inputFormArea {
   width: 30rem;
@@ -48,11 +48,17 @@
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1.2rem;
-  font-family: "Walkway-Bold";
+  font-family: "kanit-medium";
 }
 .inputForm::placeholder {
   text-align: center;
   font-size: 1.2rem;
+  color: #ee7124a7;
+}
+.inputFormArea::placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ee7124a7;
 }
 .inputBtn {
   width: 10rem;

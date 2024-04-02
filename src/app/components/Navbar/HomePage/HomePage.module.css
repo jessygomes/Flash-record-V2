@@ -49,7 +49,16 @@
   color: #ee7124;
   cursor: pointer;
   font-weight: 900;
+  font-family: "Kanit-Bold";
   letter-spacing: 0.3rem;
+  transition: ease-in-out 0.3s;
+}
+.button:hover {
+  transition: ease-in-out 0.3s;
+  background-color: #ee7124;
+  border: 0.1rem solid #ee7124; /* Définir une bordure */
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124;
+  color: white;
 }
 
 .separatorNeon {

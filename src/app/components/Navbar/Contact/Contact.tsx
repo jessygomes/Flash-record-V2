@@ -53,7 +53,9 @@ export default function Contact() {
   return (
     <div>
       <div className={styles.newsTitleContainer}>
-        <h1 className={styles.title}>Contactez-nous</h1>
+        <h1 id="contact" className={styles.title}>
+          Contactez-nous
+        </h1>
       </div>
       <section className={styles.newsContainer}>
         <form onSubmit={handleSubmit} className={styles.formulaire}>

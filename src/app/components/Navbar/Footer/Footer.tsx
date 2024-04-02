@@ -13,7 +13,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 export default function Footer() {
   return (
     <div className="">
-      <footer className="py-[2rem] px-[2rem] lg:px-[5rem] lg:py-[2rem] lg:mt-[3rem] flex flex-col justify-center items-center text-center gap-[2rem] text-white">
+      <footer className=" h-[100vh] py-[2rem] px-[2rem] lg:px-[5rem] lg:py-[2rem] lg:mt-[3rem] flex flex-col justify-center items-center text-center gap-[2rem] lg:gap-[1rem] text-white">
         <div className="w-[5rem] h-auto lg:w-[10rem] lg:h-auto lg:mb-[1rem]">
           <Image
             className=" object-contain"
@@ -23,7 +23,6 @@ export default function Footer() {
             alt="Fresque logo"
           />
         </div>
-
         <div>
           <div className="flex flex-wrap flex-row justify-center items-center gap-[1rem]">
             <Link href="https://www.instagram.com/flash.0ff?igshid=NGVhN2U2NjQ0Yg==">
@@ -72,6 +71,7 @@ export default function Footer() {
             <h3 className=" font-walkway text-[1rem] ">
               Website by :{" "}
               <Link
+                target="_blank"
                 href="https://inthegleam.com/"
                 className="hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               >

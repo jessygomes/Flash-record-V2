@@ -14,7 +14,9 @@ export default function Propos() {
   return (
     <div>
       <div className={styles.newsTitleContainer}>
-        <h1 className={styles.title}>à Propos</h1>
+        <h1 id="apropos" className={styles.title}>
+          à Propos
+        </h1>
       </div>
       <section className={styles.newsContainer}>
         <div className={styles.sortieContainer}>
@@ -40,33 +42,45 @@ export default function Propos() {
               nous collaborons.
             </p>
           </article>
-          <div className="flex flex-wrap flex-row justify-center items-center gap-[1rem]">
-            <Link href="https://www.instagram.com/blockparty.festival?igsh=d3cwbmxhODBpOG04">
+          <div className="flex flex-wrap flex-row justify-center items-center gap-[2rem]">
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/flash.0ff?igshid=NGVhN2U2NjQ0Yg=="
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="2x"
-                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
-            <Link href="https://www.instagram.com/blockpartyorleans/">
+            <Link
+              target="_blank"
+              href="https://www.youtube.com/@flashrecordsofficiel"
+            >
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="2x"
-                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
-            <Link href="https://www.instagram.com/blockpartyorleans/">
+            <Link
+              target="_blank"
+              href="https://x.com/Flash0ff?t=JKXRmQq2isR0TZEUjo_MFA&s=09"
+            >
               <FontAwesomeIcon
                 icon={faXTwitter}
                 size="2x"
-                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
-            <Link href="https://www.instagram.com/blockpartyorleans/">
+            <Link
+              target="_blank"
+              href="https://www.tiktok.com/@flash.0ff?_t=8iLE0f0AL9E&_r=1"
+            >
               <FontAwesomeIcon
                 icon={faTiktok}
                 size="2x"
-                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[3.5rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
           </div>

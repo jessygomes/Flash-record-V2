@@ -8,7 +8,7 @@
   background-color: transparent;
 }
 .title {
-  padding: 5rem 10rem 1rem;
+  padding: 5rem 15rem 1rem;
   color: aliceblue;
   font-size: 4.5rem;
   font-weight: 900;
@@ -43,10 +43,9 @@
   width: 25vw;
   padding: 0rem 0 0rem 0;
   border-radius: 1rem;
-  box-shadow: 1px 30px 50px #0000008b;
-  /* border: 1px solid #ee7124; */
-  /* box-shadow: 0 0 2px #ee712490, inset 0 0 8px #ee712490, 0 0 30px #ee712490,
-    inset 0 0 16px #ee712490, 0 0 30px #ee712490, inset 0 0 32px #ee712490; */
+  /* box-shadow: 1px 30px 50px #0000008b; */
+  border: 0.1rem solid #ee7124; /* Définir une bordure */
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -90,6 +89,14 @@
   font-weight: 900;
   font-family: "Kanit-Bold";
   letter-spacing: 0.3rem;
+  transition: ease-in-out 0.3s;
+}
+.button:hover {
+  transition: ease-in-out 0.3s;
+  background-color: #ee7124;
+  border: 0.1rem solid #ee7124; /* Définir une bordure */
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124;
+  color: white;
 }
 
 .separatorNeon {
