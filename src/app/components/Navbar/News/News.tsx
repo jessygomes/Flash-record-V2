@@ -9,6 +9,7 @@ export default function News() {
       <div className={styles.newsTitleContainer}>
         <h1 className={styles.title}>Actualités</h1>
       </div>
+      <div className={styles.separatorNeon}></div>
       <section className={styles.newsContainer}>
         <div className={styles.sortieContainer}>
           <article className={styles.articleNews}>
@@ -16,16 +17,22 @@ export default function News() {
             <div className={styles.containerTiktok}>
               <Video
                 className={styles.tiktok__video}
-                src="/videos/yendtrailermp4.mp4"
+                src="/videos/leoneteaser.mp4"
                 controls={false}
                 muted
                 autoPlay
                 playsInline
                 loop
               />
+              <p className={styles.tiktokText}>
+                LEONE{" "}
+                <Link href="https://www.instagram.com/leone_shwarks?igsh=MTFscmFtNmpvMDQwMw==">
+                  @LEONE_SHWARKS
+                </Link>{" "}
+                - LOUBARD
+              </p>
             </div>
             <div className={styles.containerButtons}>
-              <p className={styles.tiktokText}>YEND - VALHALLAH</p>
               <Link
                 href="https://www.youtube.com/@flashrecordsofficiel"
                 target="blank"
@@ -42,16 +49,17 @@ export default function News() {
               </Link>
             </div>
           </article>
-          {/* <h2 className={styles.title2}>Events</h2> */}
+
           <article className={styles.articleNews}>
+            <h2 className={styles.title2}>Events</h2>
             <div className={styles.containerTiktok}>
-              <Image
+              {/* <Image
                 className={styles.tiktok__video}
                 src="/assets/Affiche_digitale.jpg"
                 alt="Affiche digitale"
                 width="300"
                 height="300"
-              />
+              /> */}
             </div>
             <div className={styles.containerButtons}>
               <Link

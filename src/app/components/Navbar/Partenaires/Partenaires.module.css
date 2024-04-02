@@ -1,7 +1,7 @@
 .newsContainer {
   /* height: 100vh; */
   background: linear-gradient(180deg, #000000, #0a0a0a);
-  padding: 2rem 10rem 2rem;
+  padding: 2rem 15rem 4rem;
 }
 
 .newsTitleContainer {
@@ -14,26 +14,40 @@
   font-weight: 900;
   text-transform: uppercase;
 }
-.title2 {
-  font-size: 2rem;
-  color: aliceblue;
-}
-
-.sortieContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 .articleNews {
   color: aliceblue;
   width: 100%;
-  margin: 10rem 0 5rem 0;
+  margin: 3rem 0 2rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-family: "Walkway-Bold";
+  font-size: 1.2rem;
+}
+.textPropos {
+  text-align: left;
+}
+
+.partenairesList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.partenaires {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.partenairesOrlinside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .separatorNeon {

@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        walkway: ["Walkway-Bold", "sans-serif"],
+        kanitBold: ["Kanit-Bold", "sans-serif"],
+        kanitMedium: ["Kanit-Medium", "sans-serif"],
+        kanitLight: ["Kanit-Light", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

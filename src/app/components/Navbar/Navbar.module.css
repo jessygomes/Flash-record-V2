@@ -14,7 +14,7 @@
 } */
 
 .nav {
-  font-family: "kanit";
+  font-family: "Kanit-Bold";
   color: #ee7124;
 }
 
@@ -70,12 +70,12 @@
 }
 
 .nav__item:hover {
-  text-shadow: 0 0 5px #ee7124, 0 0 10px #ee7124, 0 0 5px #ee7124,
-    0 0 10px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
+  text-shadow: 0 0 10px #ee7124, 0 0 5px #ee7124, 0 0 2px #ee7124,
+    0 0 5px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
 }
 .nav__item.activeLink {
-  text-shadow: 0 0 5px #ee7124, 0 0 10px #ee7124, 0 0 5px #ee7124,
-    0 0 10px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
+  text-shadow: 0 0 10px #ee7124, 0 0 5px #ee7124, 0 0 2px #ee7124,
+    0 0 5px #ee7124, 0 0 0px #ee7124, 0 0 0px #ee7124;
 }
 
 @media screen and (max-width: 767px) {

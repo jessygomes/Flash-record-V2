@@ -1,4 +1,14 @@
 import styles from "./Propos.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faYoutube,
+  faXTwitter,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import Link from "next/link";
+import Carrousel from "../components/Navbar/Carrousel/Carrousel";
 
 export default function Propos() {
   return (
@@ -30,7 +40,44 @@ export default function Propos() {
               nous collaborons.
             </p>
           </article>
+          <div className="flex flex-wrap flex-row justify-center items-center gap-[1rem]">
+            <Link href="https://www.instagram.com/blockparty.festival?igsh=d3cwbmxhODBpOG04">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="2x"
+                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/blockpartyorleans/">
+              <FontAwesomeIcon
+                icon={faYoutube}
+                size="2x"
+                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/blockpartyorleans/">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                size="2x"
+                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/blockpartyorleans/">
+              <FontAwesomeIcon
+                icon={faTiktok}
+                size="2x"
+                className="text-white hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+              />
+            </Link>
+          </div>
+          <ul className={styles.motcles}>
+            <li>Shooting</li>
+            <li>Production & Enregistrement</li>
+            <li>Captation Vidéo</li>
+            <li>événement & Show</li>
+          </ul>
         </div>
+        <Carrousel />
       </section>
       <div className={styles.separatorNeon}></div>
     </div>

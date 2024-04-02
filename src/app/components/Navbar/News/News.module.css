@@ -17,23 +17,24 @@
 
 .sortieContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .articleNews {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   text-align: center;
   gap: 2rem;
-  border: 1px solid #ee7124;
 }
 .title2 {
   /* margin-top: 1rem; */
-  background-color: #751010;
+  font-family: "Kanit-Bold";
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
   font-size: 2rem;
   color: aliceblue;
 }
@@ -41,23 +42,41 @@
   height: 70vh;
   width: 25vw;
   padding: 0rem 0 0rem 0;
-  border: 1px solid #ee7124;
+  border-radius: 1rem;
+  box-shadow: 1px 30px 50px #0000008b;
+  /* border: 1px solid #ee7124; */
+  /* box-shadow: 0 0 2px #ee712490, inset 0 0 8px #ee712490, 0 0 30px #ee712490,
+    inset 0 0 16px #ee712490, 0 0 30px #ee712490, inset 0 0 32px #ee712490; */
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .tiktok__video {
+  position: absolute;
+  border-radius: 1rem;
   height: 100%;
   width: 100%;
   --media-object-fit: cover;
+  top: 0;
+  left: 0;
 }
 .tiktokText {
+  position: absolute;
   color: aliceblue;
+  bottom: 30px;
+  margin: auto;
+  background-color: #0a0a0a72;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 .containerButtons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 .button {
   width: 12rem;
@@ -69,6 +88,7 @@
   color: #ee7124;
   cursor: pointer;
   font-weight: 900;
+  font-family: "Kanit-Bold";
   letter-spacing: 0.3rem;
 }
 
