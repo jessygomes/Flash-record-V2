@@ -69,7 +69,9 @@ export default function Navbar() {
                   className={styles.nav__itemContainer}
                   key={index}
                   onClick={() => {
-                    setActiveLink(item.link), setNavActive(false);
+                    setActiveLink(item.link),
+                      setIsActive(!isActive),
+                      setNavActive(false);
                   }}
                 >
                   <Link

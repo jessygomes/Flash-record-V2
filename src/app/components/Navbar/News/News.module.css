@@ -66,6 +66,7 @@
   background-color: #0a0a0a72;
   padding: 1rem 0;
   width: 100%;
+  font-family: "Walkway-Bold";
 }
 .containerButtons {
   display: flex;
@@ -131,6 +132,9 @@
     height: 60vh;
     width: 90%;
     padding: 0rem 0 0rem 0;
+  }
+  .tiktokText {
+    font-size: 0.8rem;
   }
   .containerButtons {
     flex-direction: row;

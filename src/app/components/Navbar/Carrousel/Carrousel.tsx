@@ -43,7 +43,6 @@ export default function Carrousel() {
             src="/assets/Shooting/bvnx-min.jpg"
             width={500}
             height={700}
-            layout="responsive"
           />
         </SwiperSlide>
         <SwiperSlide
@@ -78,8 +77,8 @@ export default function Carrousel() {
           <Image
             alt="DYZE"
             src="/assets/Shooting/dyze.jpg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
         <SwiperSlide
