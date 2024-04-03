@@ -66,6 +66,10 @@
   .articleNews {
     margin: 2rem 0 2rem 0;
     gap: 1rem;
+    font-size: 1rem;
+  }
+  .textPropos {
+    text-align: justify;
   }
   .partenairesList {
     flex-direction: row;
