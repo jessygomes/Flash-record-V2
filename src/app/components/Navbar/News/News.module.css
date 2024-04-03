@@ -1,9 +1,9 @@
+/*! PC PORTABLE */
 .newsContainer {
   /* height: 100vh; */
   background: linear-gradient(180deg, #000000, #0a0a0a);
   padding: 8rem 10rem 10rem;
 }
-
 .newsTitleContainer {
   background-color: transparent;
 }
@@ -14,7 +14,6 @@
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .sortieContainer {
   display: flex;
   flex-direction: row;
@@ -68,7 +67,6 @@
   padding: 1rem 0;
   width: 100%;
 }
-
 .containerButtons {
   display: flex;
   flex-direction: row;
@@ -98,7 +96,6 @@
   box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124;
   color: white;
 }
-
 .separatorNeon {
   width: 100%;
   height: 0.1rem;
@@ -107,4 +104,80 @@
   box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124,
     inset 0 0 16px #ee7124, 0 0 32px #ee7124, inset 0 0 32px #ee7124;
   z-index: 100;
+}
+
+/*! MOBILE */
+@media screen and (max-width: 767px) {
+  .newsContainer {
+    padding: 3rem 1rem 5rem;
+  }
+  .title {
+    padding: 5rem 0rem 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .sortieContainer {
+    flex-direction: column;
+  }
+  .articleNews {
+    gap: 1rem;
+  }
+  .title2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .containerTiktok {
+    height: 60vh;
+    width: 90%;
+    padding: 0rem 0 0rem 0;
+  }
+  .containerButtons {
+    flex-direction: row;
+    margin-top: 0.5rem;
+  }
+  .button {
+    width: 8rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+/*! TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .newsContainer {
+    padding: 3rem 1rem 5rem;
+  }
+  .title {
+    padding: 5rem 0rem 1rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .sortieContainer {
+    flex-direction: column;
+  }
+  .articleNews {
+    gap: 1rem;
+  }
+  .title2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .containerTiktok {
+    height: 60vh;
+    width: 55%;
+    padding: 0rem 0 0rem 0;
+  }
+  .containerButtons {
+    flex-direction: row;
+    margin-top: 0.5rem;
+  }
+  .button {
+    width: 10rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
 }

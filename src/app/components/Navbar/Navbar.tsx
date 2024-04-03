@@ -32,17 +32,26 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState("/");
   const pathname = usePathname();
 
+  //! BURGER TO CROSS
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    setIsActive(!isActive);
+    setNavActive(!navActive);
+  };
+
   return (
     <div>
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div
-            className={styles.nav__menuBar}
-            onClick={() => setNavActive(!navActive)}
+            className={`${styles.nav__menuBar} ${
+              isActive ? styles.active : ""
+            }`}
+            onClick={handleClick}
           >
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className={`${styles.line} ${styles.l1}`}></div>
+            <div className={`${styles.line} ${styles.l2}`}></div>
+            <div className={`${styles.line} ${styles.l3}`}></div>
           </div>
 
           <div

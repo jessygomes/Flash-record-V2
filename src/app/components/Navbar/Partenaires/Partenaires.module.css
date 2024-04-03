@@ -1,9 +1,7 @@
 .newsContainer {
-  /* height: 100vh; */
   background: linear-gradient(180deg, #000000, #0a0a0a);
   padding: 2rem 15rem 4rem;
 }
-
 .newsTitleContainer {
   background-color: transparent;
 }
@@ -14,7 +12,6 @@
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .articleNews {
   color: aliceblue;
   width: 100%;
@@ -29,7 +26,6 @@
 .textPropos {
   text-align: left;
 }
-
 .partenairesList {
   display: flex;
   flex-direction: row;
@@ -40,16 +36,13 @@
 }
 .partenaires {
   width: 13rem;
-  height: 13rem;
   border-radius: 50%;
-  overflow: hidden;
 }
 .partenairesOrlinside {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .separatorNeon {
   width: 100%;
   height: 0.1rem;
@@ -58,4 +51,60 @@
   box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124,
     inset 0 0 16px #ee7124, 0 0 32px #ee7124, inset 0 0 32px #ee7124;
   z-index: 100;
+}
+
+/*! MOBILE */
+@media screen and (max-width: 767px) {
+  .newsContainer {
+    padding: 3rem 1rem 1rem;
+  }
+  .title {
+    padding: 3rem 0rem 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .articleNews {
+    margin: 2rem 0 2rem 0;
+    gap: 1rem;
+  }
+  .partenairesList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .partenaires {
+    width: 8rem;
+    border-radius: 50%;
+  }
+  .partenairesOrlinside {
+    width: 70%;
+    margin: 2rem auto 0;
+  }
+}
+
+/*! TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .newsContainer {
+    padding: 3rem 2rem 1rem;
+  }
+  .title {
+    padding: 5rem 0rem 1rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .partenairesList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .partenaires {
+    width: 12rem;
+    border-radius: 50%;
+  }
+  .partenairesOrlinside {
+    width: 70%;
+    margin: 2rem auto 2rem;
+  }
 }

@@ -55,13 +55,13 @@ export default function News() {
           <article className={styles.articleNews}>
             <h2 className={styles.title2}>Events</h2>
             <div className={styles.containerTiktok}>
-              {/* <Image
+              <Image
                 className={styles.tiktok__video}
-                src="/assets/Affiche_digitale.jpg"
+                src="/assets/coming_soon.jpg"
                 alt="Affiche digitale"
                 width="300"
                 height="300"
-              /> */}
+              />
             </div>
             <div className={styles.containerButtons}>
               <Link

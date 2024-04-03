@@ -50,7 +50,7 @@ export default function Propos() {
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="2x"
-                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[3rem] lg:w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
             <Link
@@ -60,7 +60,7 @@ export default function Propos() {
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="2x"
-                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[3rem] lg:w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
             <Link
@@ -70,7 +70,7 @@ export default function Propos() {
               <FontAwesomeIcon
                 icon={faXTwitter}
                 size="2x"
-                className="text-white w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[3rem] lg:w-[4rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
             <Link
@@ -80,7 +80,7 @@ export default function Propos() {
               <FontAwesomeIcon
                 icon={faTiktok}
                 size="2x"
-                className="text-white w-[3.5rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
+                className="text-white w-[2.5rem] lg:w-[3.5rem] h-auto hover:text-[#ee7124] transition-all duration-200 ease-in-out"
               />
             </Link>
           </div>

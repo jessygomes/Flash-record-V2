@@ -29,114 +29,129 @@ export default function Carrousel() {
       >
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "400px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
+            objectFit: "cover",
             overflow: "hidden",
           }}
         >
           <Image
             alt="BVNX"
             src="/assets/Shooting/bvnx-min.jpg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
+            layout="responsive"
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="CLESON"
             src="/assets/Shooting/CLESON-562-min.jpg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="DYZE"
-            src="/assets/Shooting/DYZE-40-min.jpg"
+            src="/assets/Shooting/dyze.jpg"
             layout="fill"
             objectFit="cover"
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="XS"
             src="/assets/Shooting/EXPORT-XS-41-2-min.jpg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="PARTYMORE"
-            src="/assets/Shooting/pm-min.jpg"
-            layout="fill"
-            objectFit="cover"
+            src="/assets/Shooting/pm.jpg"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="LEONE"
             src="/assets/Shooting/image00023-min.jpeg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
         <SwiperSlide
           style={{
-            width: "500px",
-            height: "600px",
+            width: "100%",
+            maxWidth: "450px",
+            height: "auto",
             position: "relative",
             borderRadius: "10px",
             overflow: "hidden",
+            objectFit: "cover",
           }}
         >
           <Image
             alt="YEND"
             src="/assets/Shooting/YEND-758-min.jpg"
-            layout="fill"
-            objectFit="cover"
+            width={500}
+            height={700}
           />
         </SwiperSlide>
       </Swiper>

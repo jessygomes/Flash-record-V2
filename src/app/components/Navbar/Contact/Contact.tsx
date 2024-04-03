@@ -25,8 +25,8 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_2wk87pr",
-        "template_u9m00rn",
+        "service_1ykr4ml",
+        "template_i6jznkq",
         e.currentTarget,
         "OQpdfRliSb-itPKwp"
       )
@@ -60,7 +60,7 @@ export default function Contact() {
       <section className={styles.newsContainer}>
         <form onSubmit={handleSubmit} className={styles.formulaire}>
           {confirmationMessage && (
-            <p className="text-white font-aldrich text-center">
+            <p className="text-white font-walkway text-center">
               {confirmationMessage}
             </p>
           )}

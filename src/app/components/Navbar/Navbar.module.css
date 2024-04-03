@@ -25,13 +25,40 @@
   align-items: center;
   row-gap: 0.3rem;
   cursor: pointer;
+  position: relative;
 }
-.nav__menuBar div {
+.line {
   width: 2.5rem;
   height: 0.2rem;
   background-color: #ee7124;
   border-radius: 1rem;
   z-index: 10;
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 10px #ee7124,
+    inset 0 0 16px #ee7124, 0 0 32px #ee7124, inset 0 0 32px #ee7124;
+  transition: all 0.3s ease;
+}
+.l1 {
+  transform: translateY(0);
+}
+
+.l2 {
+  opacity: 1;
+}
+
+.l3 {
+  transform: translateY(0);
+}
+
+.active .l1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.active .l2 {
+  opacity: 0;
+}
+
+.active .l3 {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .nav__menuList {
@@ -49,6 +76,7 @@
   transition: all 0.5s ease;
   opacity: 0;
   z-index: -1;
+  padding-top: 7rem;
 }
 .nav__menuList.active {
   transition: all 0.5s ease;
@@ -61,12 +89,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.5rem;
 }
 .nav__item {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition: all 0.3s ease;
   position: relative;
+  margin-top: 2rem;
 }
 
 .nav__item:hover {
@@ -97,13 +125,14 @@
     padding: 1.5rem 1rem;
     opacity: 0;
     z-index: -1;
+    padding-top: 5rem;
   }
   .nav__itemContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .nav__item {
     font-size: 2rem;

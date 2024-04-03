@@ -1,93 +1,101 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Noise.module.css";
 
 function Noise() {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    let canvas;
-    let ctx;
-    let wWidth;
-    let wHeight;
-    const noiseData = [];
-    let frame = 0;
-    let loopTimeout;
+    setIsClient(true);
+  }, []);
 
-    // Create Noise
-    const createNoise = () => {
-      const idata = ctx.createImageData(wWidth, wHeight);
-      const buffer32 = new Uint32Array(idata.data.buffer);
-      const len = buffer32.length;
+  useEffect(() => {
+    if (isClient) {
+      let canvas;
+      let ctx;
+      let wWidth;
+      let wHeight;
+      const noiseData = [];
+      let frame = 0;
+      let loopTimeout;
 
-      for (let i = 0; i < len; i++) {
-        if (Math.random() < 0.5) {
-          buffer32[i] = 0xff000000;
+      // Create Noise
+      const createNoise = () => {
+        const idata = ctx.createImageData(wWidth, wHeight);
+        const buffer32 = new Uint32Array(idata.data.buffer);
+        const len = buffer32.length;
+
+        for (let i = 0; i < len; i++) {
+          if (Math.random() < 0.5) {
+            buffer32[i] = 0xff000000;
+          }
         }
-      }
-      noiseData.push(idata);
-    };
+        noiseData.push(idata);
+      };
 
-    // Play Noise
-    const paintNoise = () => {
-      if (frame === 9) {
-        frame = 0;
-      } else {
-        frame++;
-      }
-      ctx.putImageData(noiseData[frame], 0, 0);
-    };
+      // Play Noise
+      const paintNoise = () => {
+        if (frame === 9) {
+          frame = 0;
+        } else {
+          frame++;
+        }
+        ctx.putImageData(noiseData[frame], 0, 0);
+      };
 
-    // Loop
-    const loop = () => {
-      paintNoise(frame);
-      loopTimeout = window.setTimeout(() => {
-        window.requestAnimationFrame(loop);
-      }, 1000 / 25);
-    };
+      // Loop
+      const loop = () => {
+        paintNoise(frame);
+        loopTimeout = window.setTimeout(() => {
+          window.requestAnimationFrame(loop);
+        }, 1000 / 25);
+      };
 
-    // Setup
-    const setup = () => {
-      wWidth = window.innerWidth;
-      wHeight = window.innerHeight;
+      // Setup
+      const setup = () => {
+        wWidth = window.innerWidth;
+        wHeight = window.innerHeight;
 
-      canvas.width = wWidth;
-      canvas.height = wHeight;
+        canvas.width = wWidth;
+        canvas.height = wHeight;
 
-      for (let i = 0; i < 10; i++) {
-        createNoise();
-      }
-      loop();
-    };
+        for (let i = 0; i < 10; i++) {
+          createNoise();
+        }
+        loop();
+      };
 
-    // Reset
-    let resizeThrottle;
-    const reset = () => {
-      window.addEventListener(
-        "resize",
-        () => {
-          window.clearTimeout(resizeThrottle);
+      // Reset
+      let resizeThrottle;
+      const reset = () => {
+        window.addEventListener(
+          "resize",
+          () => {
+            window.clearTimeout(resizeThrottle);
 
-          resizeThrottle = window.setTimeout(() => {
-            window.clearTimeout(loopTimeout);
-            setup();
-          }, 200);
-        },
-        false
-      );
-    };
+            resizeThrottle = window.setTimeout(() => {
+              window.clearTimeout(loopTimeout);
+              setup();
+            }, 200);
+          },
+          false
+        );
+      };
 
-    // Init
-    const init = (() => {
-      canvas = document.getElementById("noise");
-      ctx = canvas.getContext("2d");
+      // Init
+      const init = (() => {
+        canvas = document.getElementById("noise");
+        ctx = canvas.getContext("2d");
 
-      setup();
-    })();
-    // Nettoyer les ressources lors du démontage du composant
-    return () => {
-      window.clearTimeout(loopTimeout);
-      window.removeEventListener("resize", reset);
-    };
-  }, []); // Le tableau vide [] garantit que useEffect ne s'exécutera qu'une fois lors du montage initial du composant
+        setup();
+      })();
+      // Nettoyer les ressources lors du démontage du composant
+      return () => {
+        window.clearTimeout(loopTimeout);
+        window.removeEventListener("resize", reset);
+      };
+    }
+  }, [isClient]); // Le tableau vide [] garantit que useEffect ne s'exécutera qu'une fois lors du montage initial du composant
 
   return (
     <canvas

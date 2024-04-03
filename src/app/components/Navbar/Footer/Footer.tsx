@@ -63,11 +63,11 @@ export default function Footer() {
                 Mentions Légales
               </h3>
             </Link>
-            <Link href="/politique-de-confidentialite">
+            {/* <Link href="/politique-de-confidentialite">
               <h3 className="font-walkway text-[1rem] hover:text-[#ee7124] transition-all duration-200 ease-in-out">
                 Politique de confidentitalité
               </h3>
-            </Link>
+            </Link> */}
             <h3 className=" font-walkway text-[1rem] ">
               Website by :{" "}
               <Link

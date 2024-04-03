@@ -4,24 +4,12 @@ import styles from "../../components/Navbar/News/News.module.css";
 export default function MentionsLegale() {
   return (
     <div>
-      <section className=" h-[100vh] absolute">
-        <div className=" fixed top-0 z-[-99] h-[100vh] w-[100vw]">
-          <Video
-            className=""
-            src="/videos/videprezcompr.mp4"
-            controls={false}
-            muted
-            autoPlay
-            playsInline
-            loop
-          />
-        </div>
-      </section>
-      <div className="pt-[7rem] pb-[5rem] px-[10rem] bg-[#050505]">
-        <h1 className=" font-kanitBold text-[4.5rem] text-white">
+      <section className=" h-[100vh] absolute bg-[#050505]"></section>
+      <div className="pt-[7rem] pb-[5rem] px-[1rem] lg:px-[10rem] bg-[#050505]">
+        <h1 className=" font-kanitBold text-[3rem] lg:text-[4.5rem] text-white">
           Mentions Légales
         </h1>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           1. Présentation du site
         </h2>
         <p className=" font-walkway text-white">
@@ -31,7 +19,7 @@ export default function MentionsLegale() {
           utilisateurs et visiteurs du site : www.flashrecords.com les
           informations suivantes :
         </p>
-        <h3 className=" font-kanitMedium text-[1.5rem] text-white">
+        <h3 className=" font-kanitMedium text-[1.2rem] lg:text-[1.5rem] text-white">
           Informations légales :
         </h3>
         <p className=" font-walkway text-white">
@@ -42,7 +30,7 @@ export default function MentionsLegale() {
           <br></br>
           Hébergeur du site : Hostinger <br></br>
         </p>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           2. Description des services fournis
         </h2>
         <p className=" font-walkway text-white">
@@ -58,7 +46,7 @@ export default function MentionsLegale() {
           d&apos;évoluer. Elles sont données sous réserve de modifications ayant
           été apportées depuis leur mise en ligne.
         </p>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           3. Propriété intelectuelle et contrefaçons
         </h2>
         <p className=" font-walkway text-white">
@@ -75,7 +63,7 @@ export default function MentionsLegale() {
           d&apos;une contrefaçon et poursuivie conformément aux dispositions des
           articles L.335-2 et suivants du Code de Propriété Intellectuelle.
         </p>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           4. Liens hypertextes et cookies
         </h2>
         <p className=" font-walkway text-white">
@@ -106,7 +94,7 @@ export default function MentionsLegale() {
           édition / préférences. Cliquez sur Avancées et choisissez Désactiver
           les cookies. Validez sur Ok.
         </p>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           5. Protection des biens et des personnes - Gestion des données
           personnelles
         </h2>
@@ -146,7 +134,7 @@ export default function MentionsLegale() {
           la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars
           1996 relative à la protection juridique des bases de données.
         </p>
-        <h2 className="text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
+        <h2 className=" text-[1.5rem] lg:text-[2rem] text-[#ee7124] py-[1rem] font-kanitMedium">
           6. Développement
         </h2>
         <p className=" font-walkway text-white">Site réalisé par InTheGleam.</p>
