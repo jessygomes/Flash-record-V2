@@ -64,7 +64,7 @@ export default function Contact() {
               {confirmationMessage}
             </p>
           )}
-          <p className={styles.mail}>flash.records.off@gmail.com</p>
+          <p className={styles.mail}>contact@flash-records.fr</p>
           <div>
             <input
               type="text"
