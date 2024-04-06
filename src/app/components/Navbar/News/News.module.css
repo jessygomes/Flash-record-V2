@@ -68,6 +68,14 @@
   width: 100%;
   font-family: "Walkway-Bold";
 }
+.instagram {
+  color: #ee7124;
+  text-decoration: underline;
+  transition: all ease-in-out 0.3s;
+}
+.instagram:hover {
+  color: aliceblue;
+}
 .containerButtons {
   display: flex;
   flex-direction: row;

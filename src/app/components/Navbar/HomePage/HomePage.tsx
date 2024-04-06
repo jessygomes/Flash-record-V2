@@ -41,7 +41,7 @@ export default function HomePage() {
             YouTube
           </Link>
           <Link
-            href="https://www.youtube.com/@flashrecordsofficiel"
+            href="https://linktr.ee/flash.0ff"
             target="blank"
             className={styles.button}
           >

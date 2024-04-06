@@ -37,6 +37,13 @@
 .partenaires {
   width: 13rem;
   border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.partenaires:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #ee7124, inset 0 0 8px #ee7124, 0 0 16px #ee7124,
+    inset 0 0 16px #ee7124, 0 0 32px #ee7124, inset 0 0 32px #ee7124;
 }
 .partenairesOrlinside {
   display: flex;
