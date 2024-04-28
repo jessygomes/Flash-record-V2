@@ -60,7 +60,7 @@ export default function News() {
             <div className={styles.containerTiktok}>
               <Image
                 className={styles.tiktok__video}
-                src="/assets/coming_soon.jpg"
+                src="/assets/astro1.jpg"
                 alt="Affiche digitale"
                 width="300"
                 height="300"
@@ -68,7 +68,7 @@ export default function News() {
             </div>
             <div className={styles.containerButtons}>
               <Link
-                href="https://www.youtube.com/@flashrecordsofficiel"
+                href="https://www.helloasso.com/associations/orlinside/evenements/flash-x-astrolabe-ii"
                 target="blank"
                 className={styles.button}
               >
