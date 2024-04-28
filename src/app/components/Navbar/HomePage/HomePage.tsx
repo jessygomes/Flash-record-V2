@@ -48,6 +48,13 @@ export default function HomePage() {
             Streaming
           </Link>
         </div>
+        <Link
+          target="_blank"
+          href="https://www.helloasso.com/associations/orlinside/evenements/flash-x-astrolabe-ii"
+          className={styles.astrolab}
+        >
+          ASTROLAB - 18 MAI 2024
+        </Link>
         <div className={styles.logoMobile}></div>
       </div>
       <div className={styles.contenuContainer}>
