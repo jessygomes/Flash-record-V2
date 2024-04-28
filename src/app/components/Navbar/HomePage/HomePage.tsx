@@ -53,7 +53,7 @@ export default function HomePage() {
           href="https://www.helloasso.com/associations/orlinside/evenements/flash-x-astrolabe-ii"
           className={styles.astrolab}
         >
-          ASTROLAB - 18 MAI 2024
+          ASTROLABE - 18 MAI 2024
         </Link>
         <div className={styles.logoMobile}></div>
       </div>
