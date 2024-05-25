@@ -5,6 +5,7 @@ import BgVideo from "./components/Navbar/BgVideo/BgVideo";
 import Navbar from "../app/components/Navbar/Navbar";
 import Footer from "./components/Navbar/Footer/Footer";
 import Noise from "./components/Navbar/Noise/Noise";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Analytics />
         {children}
-        {/* <BgVideo /> */}
       </body>
       <Footer />
     </html>
