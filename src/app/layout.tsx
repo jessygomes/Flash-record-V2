@@ -23,6 +23,7 @@ export default function RootLayout({
       <Noise />
       <Navbar />
       <body className={inter.className}>
+        <Analytics />
         {children}
         {/* <BgVideo /> */}
       </body>
